@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="futuristic.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="aayush3.jpeg" alt="Aayush Logo" class="logo-image">
+            <h1>Aayush<span>mishra</span></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h4>Hello, I'm</h4>
+                <h1>Aayush Mishra</h1>
+                <h3>Student of Btech in IT</h3>
+                <p>I am student of st john collage of Engineering and i am focus on be a Ai Engineer and Quantative Trading Analyst .</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn primary-btn">Hire Me</a>
+                    <a href="#portfolio" class="btn secondary-btn">My Work</a>
+                </div>
+                <div class="social-icons">
+                    <a href="https://github.com/aayushmishra52" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/aayush-mishra-3a126628a/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/aareyoush/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+                        <div class="hero-image">
+                <img src="aayush1.jpeg" alt="Developer Character">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="section-title">
+            <h2 data-text="About Me">About Me</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="about-content">
+            <div class="about-image">
+                <img src="aayush2.png" alt="Avatar">
+            </div>
+            <div class="about-text">
+                <h3>I'm a Full Stack Developer</h3>
+                <p>I am a Moderate skilled full stack developer with expertise in both frontend and backend technologies. I specialize in building scalable web applications with modern frameworks and have a strong foundation in computer science principles.</p>
+                <div class="skills">
+                    <div class="skill">
+                        <h4>JavaScript/TypeScript</h4>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 95%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <h4>React/Next.js</h4>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <h4>Node.js/Express</h4>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <h4>MongoDB/SQL</h4>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <a href="aayush resume (1).pdf" class="btn primary-btn" download="aayush_resume.pdf">Download CV</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="section-title">
+            <h2 data-text="My Services">My Services</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="services-container">
+            <div class="service-card glass-card">
+                <i class="fas fa-code"></i>
+                <h3>Full Stack Development</h3>
+                <p>Building cutting-edge web applications with modern JavaScript frameworks and cloud integration.</p>
+            </div>
+            <div class="service-card glass-card">
+                <i class="fas fa-robot"></i>
+                <h3>AI & Machine Learning</h3>
+                <p>Implementing intelligent systems using TensorFlow, PyTorch and data science techniques.</p>
+            </div>
+            <div class="service-card glass-card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Cybersecurity</h3>
+                <p>Securing applications with encryption, penetration testing, and security best practices.</p>
+            </div>
+            <div class="service-card glass-card">
+                <i class="fas fa-network-wired"></i>
+                <h3>Cloud Architecture</h3>
+                <p>Designing scalable infrastructure with AWS, Azure, and containerization technologies.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="section-title">
+            <h2 data-text="My Portfolio">My Portfolio</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="portfolio-filter">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="web">Certifications</button>
+            <button class="filter-btn" data-filter="app">Projects</button>
+            <button class="filter-btn" data-filter="ui">Online Internships</button>
+        </div>
+        <div class="portfolio-container">
+            <!-- Projects -->
+            <div class="portfolio-item" data-category="app">
+                <img src="https://images.unsplash.com/photo-1677442135136-760c813a6a13?q=80&w=2070&auto=format&fit=crop" alt="AI Prompt Generator">
+                <div class="portfolio-overlay">
+                    <h3>AI Prompt Generator</h3>
+                    <p>A sophisticated tool that leverages JavaScript to create customized AI prompts for various applications. Features an intuitive UI with real-time prompt generation and optimization suggestions.</p>
+                    <a href="https://www.linkedin.com/posts/aayush-mishra-3a126628a_ai-promptengineering-webdevelopment-activity-7329869687620587520-aEFI?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEYpSKkBjoshXLVbl4vLGdTk0_wK-Ec1P9c" class="portfolio-link" target="_blank"><i class="fas fa-link"></i></a>
+                </div>
+            </div>
+            <div class="portfolio-item" data-category="app">
+                <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=2034&auto=format&fit=crop" alt="Computer Networks Educational Website">
+                <div class="portfolio-overlay">
+                    <h3>Computer Networks Educational Website</h3>
+                    <p>An educational platform designed to simplify complex networking concepts through interactive visualizations, simulations, and comprehensive learning modules for students and professionals.</p>
+                    <a href="https://www.linkedin.com/posts/aayush-mishra-3a126628a_computernetworks-edtech-innovation-activity-7319954315622694914-spQm?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEYpSKkBjoshXLVbl4vLGdTk0_wK-Ec1P9c" class="portfolio-link" target="_blank"><i class="fas fa-link"></i></a>
+                </div>
+            </div>
+            <div class="portfolio-item" data-category="ui">
+                <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?q=80&w=2070&auto=format&fit=crop" alt="Air Piano Project">
+                <div class="portfolio-overlay">
+                    <h3>Air Piano Project</h3>
+                    <p>An innovative motion-controlled virtual piano that uses computer vision to detect hand movements, allowing users to play music without physical contact. Features customizable sounds and recording capabilities.</p>
+                    <a href="https://aayushmishra52.github.io/airpiano3/" class="portfolio-link" target="_blank"><i class="fas fa-link"></i></a>
+                </div>
+            </div>
+            <!-- Online Internships -->
+            <div class="portfolio-item" data-category="ui">
+                <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2070&auto=format&fit=crop" alt="Walmart Advanced Software Engineering">
+                <div class="portfolio-overlay">
+                    <h3>Walmart USA Internship</h3>
+                    <p>Participated in Walmart's virtual experience program, developing advanced software solutions for retail analytics and inventory management systems using modern frameworks and agile methodologies.</p>
+                    <a href="https://www.linkedin.com/posts/aayush-mishra-3a126628a_forage-certificate-activity-7313571047461568512-jR9y?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEYpSKkBjoshXLVbl4vLGdTk0_wK-Ec1P9c" class="portfolio-link" target="_blank"><i class="fas fa-link"></i></a>
+                </div>
+            </div>
+            <div class="portfolio-item" data-category="ui">
+                <img src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?q=80&w=2070&auto=format&fit=crop" alt="JPMorgan Chase Quantitative Research">
+                <div class="portfolio-overlay">
+                    <h3>JPMorgan Chase Internship</h3>
+                    <p>Completed JPMorgan's virtual experience in quantitative research, developing financial models and algorithms for risk assessment and trading strategies using Python, R, and advanced statistical methods.</p>
+                    <a href="https://www.linkedin.com/posts/aayush-mishra-3a126628a_forage-certificate-activity-7311394770356973568-hlRy?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEYpSKkBjoshXLVbl4vLGdTk0_wK-Ec1P9c" class="portfolio-link" target="_blank"><i class="fas fa-link"></i></a>
+                </div>
+            </div>
+            <!-- Certifications -->
+            <div class="portfolio-item" data-category="web">
+                <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2070&auto=format&fit=crop" alt="Infosys Springboard Certification">
+                <div class="portfolio-overlay">
+                    <h3>Infosys Springboard Certification</h3>
+                    <p>Comprehensive certification program covering Java programming, database management systems, and data analytics fundamentals with hands-on projects and industry-standard best practices.</p>
+                    <a href="#" class="portfolio-link"><i class="fas fa-certificate"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="section-title">
+            <h2 data-text="Contact Me">Contact Me</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h3>Address</h3>
+                        <p>Boisar, India</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h3>Email</h3>
+                        <p>aayushmishra062005@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h3>Phone</h3>
+                        <p>+91 8799980995</p>
+                    </div>
+                </div>
+                <div class="social-icons">
+                    <a href="https://github.com/aayushmishra52" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/aayush-mishra-3a126628a/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/aareyoush/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form>
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn primary-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Aayush. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="particles.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
